@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 * {
   margin: 0;
   padding: 0;
@@ -19,15 +23,15 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #031926;
-  color: #E7E7E7;
+  color: #e7e7e7;
   min-height: 100vh;
 }
 
 b {
   font-weight: 900;
-  color: #9067C6;
+  color: #9067c6;
 }
 
 /* Scrollbar */
@@ -65,7 +69,6 @@ b {
   top: -30px;
 }
 
-
 /* NAVBAR */
 
 .Navbar {
@@ -92,7 +95,7 @@ b {
   font-size: 32px;
   letter-spacing: 2px;
   padding-left: 7%;
-  color: #9067C6;
+  color: #9067c6;
   display: flex;
   align-items: center;
   text-align: center;
@@ -149,7 +152,7 @@ b {
   display: none;
 }
 
-@media(max-width:800px) {
+@media (max-width: 800px) {
   .Navbar {
     width: 100%;
   }
@@ -183,7 +186,7 @@ b {
 
   .bar {
     display: block;
-    background-color: #E7E7E7;
+    background-color: #e7e7e7;
     border-radius: 50px;
     height: 2.5px;
     width: 30px;
@@ -208,9 +211,7 @@ b {
     rotate: 225deg;
     transition: 0.5s;
   }
-
 }
-
 
 /* HOME PAGE */
 
@@ -242,7 +243,7 @@ b {
   height: 400px;
 }
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
   .HomePage {
     display: block;
     text-align: center;
@@ -261,7 +262,7 @@ b {
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .HomePage {
     min-height: 70vh;
   }
@@ -286,7 +287,6 @@ b {
     margin-bottom: 0px;
   }
 }
-
 
 /* ABOUT */
 
@@ -314,7 +314,7 @@ b {
 }
 
 .AboutText a {
-  color: #9067C6;
+  color: #9067c6;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -323,7 +323,7 @@ b {
   width: 280px;
 }
 
-@media(max-width:900px) {
+@media (max-width: 900px) {
   .AboutPage {
     display: block;
     text-align: center;
@@ -382,7 +382,7 @@ b {
   letter-spacing: 0.6px;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .AboutText {
     font-size: 16px;
   }
@@ -402,7 +402,6 @@ b {
     font-size: 50px;
   }
 }
-
 
 /* Project */
 
@@ -455,13 +454,12 @@ b {
   margin: 25px 3% 0;
   border-radius: 5px;
   background-color: #431f47;
-  color: #E7E7E7;
+  color: #e7e7e7;
   height: 30px;
   cursor: pointer;
   text-decoration: none;
   border-style: none;
 }
-
 
 /* Resume */
 
@@ -483,7 +481,7 @@ b {
   width: 200px;
   height: 40px;
   background-color: #431f47;
-  color: #E7E7E7;
+  color: #e7e7e7;
   text-decoration: none;
   border-radius: 5px;
   border-style: none;
@@ -492,10 +490,9 @@ b {
 
 .downloadCV:hover {
   transition: all 0.5s;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
   color: #431f47;
 }
-
 
 /* FOOTER */
 
@@ -533,7 +530,7 @@ footer h4 {
   color: inherit;
 }
 
-@media(max-width:750px) {
+@media (max-width: 750px) {
   footer {
     height: 110px;
   }
