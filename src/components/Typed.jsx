@@ -2,10 +2,10 @@ import Typewriter from "typewriter-effect";
 
 const Typed = () => {
   return (
-    <div className="TypeEffect">
+    <div className="py-[25px] font-semibold text-2xl md:text-4xl tracking-wider">
       <Typewriter
         options={{
-          strings: ["Software Developer", "MERN Stack Developer", "Next JS Developer"],
+          strings: ["Software Developer", "MERN Developer", "Next.JS Developer"],
           autoStart: true,
           loop: true,
           delay: 70,

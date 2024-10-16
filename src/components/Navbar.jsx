@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
 
 const Navbar = () => {
-  const [navbarblur, setnavbarblur] = useState(false);
+  const navigate = useNavigate();
+  const [navbarBlur, setNavbarBlur] = useState(false);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
-      setnavbarblur(true);
+      setNavbarBlur(true);
     } else {
-      setnavbarblur(false);
+      setNavbarBlur(false);
     }
   }
 
@@ -36,8 +37,8 @@ const Navbar = () => {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <nav className={navbarblur ? "Navbar blur" : "Navbar"}>
-      <h1 title="Reload" onClick={() => window.location.reload(true)} className="Logo">
+    <nav className={navbarBlur ? "Navbar backdrop:blur-xl bg-[#01111a8d]" : "Navbar"}>
+      <h1 title="Reload" onClick={() => navigate("/")} className="Logo">
         TC
       </h1>
 

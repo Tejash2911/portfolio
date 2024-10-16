@@ -3,10 +3,10 @@ import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="container flex flex-wrap items-center justify-between relative mt-20 h-24">
       <h4>Developed by Tejash Patel</h4>
-      <h4>Copyright &copy; 2024 TC</h4>
-      <div className="footerLinks">
+      {/* <h4>Copyright &copy; 2024 TC</h4> */}
+      <div className="flex justify-evenly gap-5 ">
         <a href="https://github.com/tejash2911" target="_blank">
           <FaGithub />
         </a>
