@@ -25,7 +25,7 @@ const Home = () => {
       </div>
 
       <div className="flex items-center justify-center lg:justify-between flex-wrap h-[80vh] py-7">
-        <div className="w-full lg:w-2/3 font-medium leading-7 md:leading-8 tracking-normal md:tracking-[1.2px]">
+        <div className="w-full lg:w-2/3 text-base lg:text-xl font-medium leading-7 md:leading-8 tracking-normal md:tracking-[1.2px]">
           <h1 className="text-2xl lg:text-4xl font-semibold pb-10">
             Brief <b>introduction</b>
           </h1>
