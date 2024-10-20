@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="container">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between h-screen mt-12 lg:mt-0">
-        <div className="w-full lg:w-2/3 text-base lg:text-xl font-medium leading-7 md:leading-8 tracking-normal md:tracking-[1.2px]">
+        <div className="w-full lg:w-2/3 text-base lg:text-xl font-medium leading-6 md:leading-8 tracking-normal md:tracking-[1.2px]">
           <h1 className="text-2xl lg:text-4xl font-semibold pb-10">
             Get to <b>know</b> me!
           </h1>

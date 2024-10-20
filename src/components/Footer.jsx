@@ -3,7 +3,7 @@ import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <footer className="container flex flex-wrap items-center justify-between relative mt-20 h-24">
+    <footer className="container flex flex-wrap items-center justify-between mt-20 h-24">
       <h4>Developed by Tejash Patel</h4>
       {/* <h4>Copyright &copy; 2024 TC</h4> */}
       <div className="flex justify-evenly gap-5 ">

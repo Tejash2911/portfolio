@@ -37,7 +37,7 @@ const Skills = ({ skill }) => {
   return (
     <div
       title={skill}
-      className="w-36 md:w-60 h-28 md:h-40 flex items-center justify-center border-4 border-[#431f47] text-6xl rounded-md transition-transform duration-500 hover:scale-110 hover:shadow-sm hover:shadow-[#431f47]"
+      className="w-36 lg:w-60 h-28 lg:h-40 flex items-center justify-center border-4 border-[#431f47] text-6xl rounded-md transition-transform duration-500 hover:scale-110 hover:shadow-sm hover:shadow-[#431f47]"
     >
       {icon[skill]}
     </div>

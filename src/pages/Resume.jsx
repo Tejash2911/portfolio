@@ -17,7 +17,7 @@ const Resume = () => {
   window.addEventListener("resize", handleResize);
 
   return (
-    <div className="w-fit m-auto pt-[80px] flex flex-col items-center">
+    <div className="w-fit m-auto pt-[80px] flex flex-col items-center justify-center h-screen">
       <Document file={pdf} className="pointer-events-none">
         <Page pageNumber={1} scale={wid < 700 ? (wid > 475 ? 0.7 : 0.5) : 1} />
       </Document>
