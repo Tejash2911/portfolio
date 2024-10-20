@@ -47,7 +47,7 @@ const Home = () => {
           </p>
         </div>
         <Tilt>
-          <img className="w-[200px] lg:w-[280px] " src={Avatar} alt="" />
+          <img className="w-[160px] lg:w-[280px] " src={Avatar} alt="" />
         </Tilt>
       </div>
     </div>

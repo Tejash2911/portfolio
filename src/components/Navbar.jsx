@@ -6,62 +6,79 @@ import { CgFileDocument } from "react-icons/cg";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [navbarBlur, setNavbarBlur] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      setNavbarBlur(true);
-    } else {
-      setNavbarBlur(false);
-    }
-  }
-
-  var showMenu = () => {
-    var bar = document.getElementsByClassName("bar");
-    var ham = document.getElementsByClassName("NavbarLinks");
-    bar[0].classList.toggle("barOne");
-    bar[1].classList.toggle("barTwo");
-    bar[2].classList.toggle("barThree");
-    ham[0].classList.toggle("showNavbar");
+  const toggleMenu = () => {
+    setShowMenu((prev) => !prev);
   };
 
-  var hideMenu = () => {
-    var bar = document.getElementsByClassName("bar");
-    var ham = document.getElementsByClassName("NavbarLinks");
-    bar[0].classList.remove("barOne");
-    bar[1].classList.remove("barTwo");
-    bar[2].classList.remove("barThree");
-    ham[0].classList.remove("showNavbar");
+  const hideMenu = () => {
+    setShowMenu(false);
   };
-
-  window.addEventListener("scroll", scrollHandler);
 
   return (
-    <nav className={navbarBlur ? "Navbar backdrop:blur-xl bg-[#01111a8d]" : "Navbar"}>
-      <h1 title="Reload" onClick={() => navigate("/")} className="Logo">
+    <nav className="w-full flex items-center justify-between shadow-md fixed z-50 top-0 bg-opacity-80 backdrop-blur-md bg-[#01111a8d] py-1">
+      {/* Logo */}
+      <h1
+        title="Reload"
+        onClick={() => navigate("/")}
+        className="text-3xl pl-[10%] text-[#9067c6] font-medium cursor-pointer"
+      >
         TC
       </h1>
 
-      <div className="Hamburger" onClick={showMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+      {/* Hamburger Button */}
+      <div
+        className="flex flex-col justify-center items-center space-y-1 md:hidden cursor-pointer z-50 pr-10 absolute right-0"
+        onClick={toggleMenu}
+      >
+        <span
+          className={`block w-7 h-0.5 bg-gray-300 transition-transform duration-500 ${
+            showMenu ? "rotate-45 translate-y-2" : ""
+          }`}
+        ></span>
+        <span
+          className={`block w-7 h-0.5 bg-gray-300 transition-opacity duration-500 ${
+            showMenu ? "opacity-0" : ""
+          }`}
+        ></span>
+        <span
+          className={`block w-7 h-0.5 bg-gray-300 transition-transform duration-500 ${
+            showMenu ? "-rotate-45 -translate-y-2" : ""
+          }`}
+        ></span>
       </div>
 
-      <ul className="NavbarLinks">
+      {/* Links */}
+      <ul
+        className={`text-xl flex items-center gap-8 pr-[10%] transition-transform duration-500 transform md:transform-none ${
+          showMenu
+            ? "fixed inset-0 flex flex-col items-center justify-center gap-8 h-screen bg-[#431f47] text-white"
+            : "translate-x-full md:translate-x-0"
+        }`}
+      >
         <li onClick={hideMenu}>
-          <Link to="/">
-            <AiOutlineHome /> Home
+          <Link
+            to="/"
+            className="flex items-center gap-2 text-[#c2c1c2] hover:text-[#9067c6]"
+          >
+            <AiOutlineHome /> <span>Home</span>
           </Link>
         </li>
         <li onClick={hideMenu}>
-          <Link to="/About">
-            <BsPerson /> About
+          <Link
+            to="/About"
+            className="flex items-center gap-2 text-[#c2c1c2] hover:text-[#9067c6]"
+          >
+            <BsPerson /> <span>About</span>
           </Link>
         </li>
         <li onClick={hideMenu}>
-          <Link to="/Resume">
-            <CgFileDocument /> Resume
+          <Link
+            to="/Resume"
+            className="flex items-center gap-2 text-[#c2c1c2] hover:text-[#9067c6]"
+          >
+            <CgFileDocument /> <span>Resume</span>
           </Link>
         </li>
       </ul>

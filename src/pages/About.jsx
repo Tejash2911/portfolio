@@ -6,7 +6,7 @@ import Skills from "../components/Skills";
 const About = () => {
   return (
     <div className="container">
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between h-screen mt-12 lg:mt-0">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between h-screen">
         <div className="w-full lg:w-2/3 text-base lg:text-xl font-medium leading-6 md:leading-8 tracking-normal md:tracking-[1.2px]">
           <h1 className="text-2xl lg:text-4xl font-semibold pb-10">
             Get to <b>know</b> me!
@@ -22,9 +22,6 @@ const About = () => {
             <br />I am <b>open</b> to new collaborations or work where I can
             contribute and grow. Feel free to connect with me, links are in the
             footer.
-            <br />
-            Apart from coding I love to do photography, you can check out some
-            of my shots here
             <b>
               <a
                 href="https://www.instagram.com/___tejas2911/"
@@ -40,7 +37,7 @@ const About = () => {
         <div>
           <Tilt>
             <Lottie
-              className="w-[280px] lg:w-[400px]"
+              className="w-[250px] lg:w-[400px]"
               animationData={Coder}
               loop={true}
             />
