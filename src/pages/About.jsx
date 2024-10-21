@@ -7,15 +7,15 @@ const About = () => {
   return (
     <div className="container">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between h-screen">
-        <div className="w-full lg:w-2/3 text-base lg:text-xl font-medium leading-6 md:leading-8 tracking-normal md:tracking-[1.2px]">
-          <h1 className="text-2xl lg:text-4xl font-semibold pb-10">
+        <div className="text-base lg:text-xl font-medium leading-5 sm:leading-8 tracking-normal sm:tracking-[1.2px]">
+          <h1 className="text-2xl lg:text-4xl font-semibold pb-4">
             Get to <b>know</b> me!
           </h1>
           <p>
             Hi, my name is <b>Tejash Patel</b> and I am from Surat Gujarat,
             India. I&apos;m a <b>MERN stack web developer</b>. <br />
-            <br />I have done an internship as a <b>software developer</b> at
-            TOPS Technologies which is a IT Teaching Institute. I love to create
+            <br />I have done my training as a <b>software developer</b> at TOPS
+            Technologies which is a IT Teaching Institute. I love to create
             original projects with beautiful designs, you can check out some of
             my work in the projects section.
             <br />

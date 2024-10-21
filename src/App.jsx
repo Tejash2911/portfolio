@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
+import Projects from "./pages/Projects";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,13 +25,19 @@ function App() {
     <>
       {loading ? (
         <div className="loader">
-          <HashLoader color={"#9067C6"} loading={true} size={100} aria-label="Loading Spinner" data-testid="loader" />
+          <HashLoader
+            color={"#9067C6"}
+            loading={true}
+            size={100}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </div>
       ) : (
         <div>
           <Lottie className="bg" animationData={nightsky} loop={true} />
-          <Lottie className="bgtwo" animationData={nightsky} loop={true} />
-          <Lottie className="bgtemp" animationData={nightsky} loop={true} />
+          <Lottie className="bgTwo" animationData={nightsky} loop={true} />
+          <Lottie className="bgTemp" animationData={nightsky} loop={true} />
 
           <Navbar />
           <MoveToTop />
@@ -38,6 +45,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Project" element={<Projects />} />
             <Route path="/Resume" element={<Resume />} />
           </Routes>
 

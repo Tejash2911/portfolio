@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
-import { BsPerson } from "react-icons/bs";
+import { BsCodeSlash, BsPerson } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
 
 const Navbar = () => {
@@ -71,6 +71,14 @@ const Navbar = () => {
             className="flex items-center gap-2 text-[#c2c1c2] hover:text-[#9067c6]"
           >
             <BsPerson /> <span>About</span>
+          </Link>
+        </li>
+        <li onClick={hideMenu}>
+          <Link
+            to="/Project"
+            className="flex items-center gap-2 text-[#c2c1c2] hover:text-[#9067c6]"
+          >
+            <BsCodeSlash /> Projects
           </Link>
         </li>
         <li onClick={hideMenu}>
