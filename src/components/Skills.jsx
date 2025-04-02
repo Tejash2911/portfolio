@@ -1,26 +1,24 @@
-import {
-  FaReact,
-  FaGitAlt,
-  FaGithub,
-  FaNpm,
-  FaBootstrap,
-} from "react-icons/fa";
-import { DiNodejs, DiJavascript1 } from "react-icons/di";
+import { FaGitAlt, FaGithub, FaNpm, FaBootstrap } from "react-icons/fa";
+import { DiNodejs } from "react-icons/di";
 import {
   SiExpress,
+  SiJavascript,
   SiMongodb,
   SiNextdotjs,
   SiPostman,
+  SiReact,
   SiRedux,
   SiTailwindcss,
+  SiTypescript,
   SiVercel,
 } from "react-icons/si";
 
 const Skills = ({ skill }) => {
   const icon = {
     Postman: <SiPostman />,
-    React: <FaReact />,
-    Javascript: <DiJavascript1 />,
+    React: <SiReact />,
+    Javascript: <SiJavascript />,
+    Typescript: <SiTypescript />,
     Node: <DiNodejs />,
     Express: <SiExpress />,
     MongoDb: <SiMongodb />,

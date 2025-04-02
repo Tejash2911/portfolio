@@ -34,11 +34,11 @@ const Home = () => {
             product that impacts lives. I want to do work that challenges me as
             a developer & work that I can be proud of.
             <br />
-            <br />I am fluent in <b>Javascript</b> and know a bit of{" "}
-            <b>Typescript</b> and am working on a few projects in the{" "}
-            <b>MERN</b> stack.
-            <br />I plan to learn <b>Next.js</b>, <b>Three.js</b> and
-            <b> Typescript</b> in the near future. <br />
+            <br />I am fluent in <b>Javascript</b> and <b>Typescript</b> and am
+            working on a few projects in the <b>MERN</b> stack and{" "}
+            <b>Next.JS</b>.
+            <br />I plan to learn <b>Three.js</b> and <b>React Native</b> for
+            app development in the near future. <br />
             <br />
             Also, I love <b>coffee</b>{" "}
             <CiCoffeeCup

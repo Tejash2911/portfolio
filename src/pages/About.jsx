@@ -50,6 +50,7 @@ const About = () => {
       </h1>
       <div className="flex flex-wrap justify-center gap-7 py-10 ">
         <Skills skill="Javascript" />
+        <Skills skill="Typescript" />
         <Skills skill="React" />
         <Skills skill="Node" />
         <Skills skill="Express" />
