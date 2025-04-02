@@ -63,6 +63,7 @@ const About = () => {
         <Skills skill="Npm" />
         <Skills skill="Bootstrap" />
         <Skills skill="Tailwind" />
+        <Skills skill="MUI" />
       </div>
     </div>
   );

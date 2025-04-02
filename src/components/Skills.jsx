@@ -4,6 +4,7 @@ import {
   SiExpress,
   SiJavascript,
   SiMongodb,
+  SiMui,
   SiNextdotjs,
   SiPostman,
   SiReact,
@@ -29,6 +30,7 @@ const Skills = ({ skill }) => {
     Vercel: <SiVercel />,
     NextJS: <SiNextdotjs />,
     Tailwind: <SiTailwindcss />,
+    MUI: <SiMui />,
     Redux: <SiRedux />,
   };
 
